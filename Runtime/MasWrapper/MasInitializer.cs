@@ -17,6 +17,7 @@ namespace MasWrapper
                 if (success)
                 {
                     IsInitialized = true;
+                    OnMediationInitialized?.Invoke;
                     Debug.Log("[Yodo1 Mas] The initialization has succeeded");
                 }
                 else
