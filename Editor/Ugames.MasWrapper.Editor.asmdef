@@ -1,0 +1,18 @@
+{
+    "name": "Ugames.MasWrapper.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f2ef62461d774461dbf108ca17149b44"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
