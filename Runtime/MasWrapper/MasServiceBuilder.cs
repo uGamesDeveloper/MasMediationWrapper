@@ -20,18 +20,9 @@ namespace MasWrapper
         {
             _adsConfig = adsConfig;
             _initializer = new MasInitializer();
-            _initializer.Initialize();
-            if (_initializer.IsInitialized)
-            {
-                _adUnitsFactory = new MasSdkAdUnitsFactory(coroutineRunner);
-            }
-            else
-            {
-                _initializer.OnMediationInitialized += () =>
-                {
-                    _adUnitsFactory = new MasSdkAdUnitsFactory(coroutineRunner);
-                };
-            }
+            _initializer.Initialize();            
+            _adUnitsFactory = new MasSdkAdUnitsFactory(coroutineRunner);
+            
         }
 
         public void QuickBuild()
