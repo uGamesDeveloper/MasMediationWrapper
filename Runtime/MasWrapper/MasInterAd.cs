@@ -9,7 +9,7 @@ namespace MasWrapper
 
         public MasInterAd(IAdUnitKey key, IAdUnitEvents events, ICoroutineRunner coroutineRunner) : base(key, events, coroutineRunner)
         {
-            Yodo1U3dInterstitialAd.GetInstance().LoadAd();
+            
         }
         protected override bool IsAdReady() => Yodo1U3dInterstitialAd.GetInstance().IsLoaded();
 

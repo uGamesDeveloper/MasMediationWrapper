@@ -19,11 +19,12 @@ namespace MasWrapper
         public MasServiceBuilder(AdsConfig adsConfig,ICoroutineRunner coroutineRunner)
         {
             _adsConfig = adsConfig;
-            _initializer = new MasInitializer();
+            _initializer = new MasInitializer(adsConfig);
             _initializer.Initialize();            
             _adUnitsFactory = new MasSdkAdUnitsFactory(coroutineRunner);
-            
         }
+
+        
 
         public void QuickBuild()
         {

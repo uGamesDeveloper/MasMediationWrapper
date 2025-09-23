@@ -2,15 +2,21 @@
 <dependencies>
   <androidPackages>
     <repositories>
+      <repository>https://artifactory.bidmachine.io/bidmachine</repository>
       <repository>https://cboost.jfrog.io/artifactory/chartboost-ads/</repository>
       <repository>https://android-sdk.is.com</repository>
       <repository>https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea</repository>
       <repository>https://artifact.bytedance.com/repository/pangle</repository>
+      <repository>https://bitbucket.org/sdkcenter/sdkcenter/raw/release</repository>
     </repositories>
     <androidPackage spec="com.yodo1.mas:core:4.16.0" />
     <androidPackage spec="com.yodo1.mas:gplibrary:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation:applovin:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.applovin.adapters:admob:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation:bidmachine:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation.bidmachine.adapters:applovin:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation:bigo:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation.bigo.adapters:applovin:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation:chartboost:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.chartboost.adapters:admob:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.chartboost.adapters:applovin:4.16.0" />
@@ -29,6 +35,9 @@
     <androidPackage spec="com.yodo1.mas.mediation:vungle:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.vungle.adapters:admob:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.vungle.adapters:applovin:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation:facebook:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation.facebook.adapters:admob:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation.facebook.adapters:applovin:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation:mintegral:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.mintegral.adapters:admob:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.mintegral.adapters:applovin:4.16.0" />
@@ -38,9 +47,13 @@
     <androidPackage spec="com.yodo1.mas.mediation:pangle:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.pangle.adapters:admob:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.pangle.adapters:applovin:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation:taurusx:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation.taurusx.adapters:applovin:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation:unityads:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.unityads.adapters:admob:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation.unityads.adapters:applovin:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation:yandex:4.16.0" />
+    <androidPackage spec="com.yodo1.mas.mediation.yandex.adapters:applovin:4.16.0" />
     <androidPackage spec="com.yodo1.mas.mediation:yodo1:4.16.0" />
   </androidPackages>
 </dependencies>

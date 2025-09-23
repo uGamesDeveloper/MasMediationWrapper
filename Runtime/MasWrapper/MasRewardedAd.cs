@@ -10,7 +10,7 @@ namespace MasWrapper
         public MasRewardedAd(IAdUnitKey key, IAdUnitEvents events,
             ICoroutineRunner coroutineRunner) : base(key, events, coroutineRunner)
         {
-            Yodo1U3dRewardAd.GetInstance().LoadAd();
+            
         }
         protected override bool IsAdReady() => Yodo1U3dRewardAd.GetInstance().IsLoaded();
 

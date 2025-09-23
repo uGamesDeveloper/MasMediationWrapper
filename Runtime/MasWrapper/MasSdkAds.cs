@@ -26,10 +26,6 @@ namespace MasWrapper
         {
             _builder.QuickBuild();
             _adsService = _builder.GetResult();
-            foreach (var adUnit in _adsService.AdUnits)
-            {
-                adUnit?.Load();
-            }
             
             return _adsService;
         }

@@ -1,5 +1,6 @@
 using System;
 using LittleBitGames.Ads.AdUnits;
+using UnityEngine;
 using Yodo1.MAS;
 
 namespace MasWrapper
@@ -19,6 +20,7 @@ namespace MasWrapper
             Yodo1U3dRewardAd.GetInstance().OnAdLoadedEvent += (ad)=> OnAdLoaded?.Invoke(null,null);
             Yodo1U3dRewardAd.GetInstance().OnAdLoadFailedEvent +=(ad,error)=>
             {
+                Debug.LogError("Mas SDK: " +  error);
                 OnAdLoadFailed?.Invoke(null, error != null ? new AdErrorInfo(error) : null);
             };
             Yodo1U3dRewardAd.GetInstance().OnAdOpenFailedEvent += (ad, error) =>
